@@ -12,6 +12,9 @@
     font-size: 80px;
     text-shadow: 3px 3px 7px rgb(231, 231, 231)
   }
+  .team-icon{
+    color: white;
+  }
   @media (max-width: 576px) { 
       .header{
           width: 70%;
