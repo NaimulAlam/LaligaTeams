@@ -1,0 +1,22 @@
+.logoDiv{
+    text-align: center;
+}
+.logoDiv{
+    padding: 20px;
+}
+.fbLogo{
+    color: blue;
+    margin: 10px;
+}
+.ytLogo{
+    color: red;
+    margin: 10px;
+}
+.ttbLogo{
+    color: skyblue;
+    margin: 10px;
+}
+.instaLogo{
+    color: white;
+    margin: 10px;
+}

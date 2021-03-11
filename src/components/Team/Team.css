@@ -1,0 +1,14 @@
+.logoStyle{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.teamColStyle{
+    text-align: center;
+    padding: 20px;
+}
+.cardStyle{
+    padding: 20px;
+}
