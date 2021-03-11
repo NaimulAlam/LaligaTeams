@@ -37,7 +37,7 @@ const TeamDetail = () => {
             </div>
             <div className='team-detail-div'>
                 <Row className='team-detail-row'>
-                    <Col className='team-detail' sm={7}>
+                    <Col className='team-detail' sm={6}>
                         <h1> <strong> {(team.strTeam)} </strong> </h1>
                         <p> <FontAwesomeIcon icon={faLandmark} />   Founded: {(team.intFormedYear)} </p>
                         <p> <FontAwesomeIcon icon={faFlag} />   Country: {(team.strCountry)} </p>
@@ -48,7 +48,7 @@ const TeamDetail = () => {
                                 : <p> <FontAwesomeIcon icon={faVenus} />  Gender: {(team.strGender)}</p>
                         }
                     </Col>
-                    <Col className="team-image-col" sm={5}>
+                    <Col className="team-image-col" sm={6}>
                         {
                             (team.strGender === "Male")
                                 ? <img src={malePhoto} alt="Male-Team" />

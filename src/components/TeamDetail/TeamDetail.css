@@ -7,7 +7,7 @@
     padding: 20px 0px;
 }
 .team-detail-div{
-    padding: 10px 100px;
+    padding: 10px 200px;
     background-color: rgb(114, 0, 0);
     color: white;
     margin: auto;
@@ -44,7 +44,7 @@
         padding: 10px 40px;
     }
     .team-image-col img{
-        width: 300px;
+        width: 280px;
         height: 200px;
     }
 }
