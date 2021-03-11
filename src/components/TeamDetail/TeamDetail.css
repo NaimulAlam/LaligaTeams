@@ -1,8 +1,10 @@
 .teamDetailHeader{
     text-align: center;
+    height: 250px;
 }
-.teamDetailHeaderImg{
+.teamDetailHeaderLogo{
     height: 200px;
+    padding: 20px 0px;
 }
 .team-detail-div{
     padding: 10px 100px;
@@ -14,7 +16,6 @@
     padding: 20px 0px ;
 }
 .team-detail-row{
-    border: 1px solid red;
     border-radius: 20px;
     background-color: crimson;
     color: white;

@@ -5,7 +5,7 @@ import './NotFound.css'
 
 const NotFound = () => {
     return (
-        <Jumbotron>
+        <Jumbotron className='notFound' >
             <h1>Sorry! 404 Not Found</h1>
             <p>
                 <Link to="/"> <Button variant="primary">Return Home</Button></Link>

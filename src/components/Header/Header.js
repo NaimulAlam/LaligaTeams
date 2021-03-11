@@ -7,7 +7,7 @@ import './Header.css';
 const Header = () => {
     return (
         <Container fluid className='header'>
-            <h1 className='header-txt'>
+            <h1>
                 <FontAwesomeIcon className='team-icon' icon={faUsers} />La Liga Teams
             </h1>
         </Container>

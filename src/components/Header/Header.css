@@ -10,7 +10,8 @@
   .header h1{
     font-family: 'Ravi Prakash', cursive;
     font-size: 80px;
-    text-shadow: 3px 3px 7px rgb(231, 231, 231)
+    color: white;
+    text-shadow: 2px 2px 5px rgb(231, 231, 231)
   }
   .team-icon{
     color: white;

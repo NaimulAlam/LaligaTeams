@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFlag, faFutbol, faLandmark, faMars, } from '@fortawesome/free-solid-svg-icons'
+import { faFlag, faFutbol, faLandmark, faMars, faVenus, } from '@fortawesome/free-solid-svg-icons'
 import './TeamDetail.css';
 import malePhoto from '../../images/male.png';
 import femalePhoto from '../../images/female.png';
@@ -24,25 +24,29 @@ const TeamDetail = () => {
     }, [strTeam])
 
     const headerStyle = {
-        opacity: '0.7',
-        backgroundImage: `url(${team.strStadiumThumb})`,
+        opacity: '0.8',
+        backgroundImage: `url(${team.strTeamBanner})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
+        backgroundSize: '100% 100%',
     }
 
     return (
         <div>
             <div className='teamDetailHeader' style={headerStyle}>
-                <img className='teamDetailHeaderImg' src={team.strTeamBadge} alt="" />
+                <img className='teamDetailHeaderLogo' src={team.strTeamBadge} alt="" />
             </div>
             <div className='team-detail-div'>
                 <Row className='team-detail-row'>
                     <Col className='team-detail' sm={7}>
-                        <h2> {(team.strAlternate)} </h2>
+                        <h1> <strong> {(team.strTeam)} </strong> </h1>
                         <p> <FontAwesomeIcon icon={faLandmark} />   Founded: {(team.intFormedYear)} </p>
                         <p> <FontAwesomeIcon icon={faFlag} />   Country: {(team.strCountry)} </p>
                         <p> <FontAwesomeIcon icon={faFutbol} />   Sport Type: {(team.strSport)} </p>
-                        <p> <FontAwesomeIcon icon={faMars} />  Gender: {(team.strGender)}</p>
+                        {
+                            (team.strGender === "Male")
+                                ? <p> <FontAwesomeIcon icon={faMars} />  Gender: {(team.strGender)}</p>
+                                : <p> <FontAwesomeIcon icon={faVenus} />  Gender: {(team.strGender)}</p>
+                        }
                     </Col>
                     <Col className="team-image-col" sm={5}>
                         {
