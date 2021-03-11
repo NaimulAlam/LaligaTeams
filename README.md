@@ -1,6 +1,6 @@
 # La Liga Teams
 
-The Live Site is here: [La Liga Teams](https://laliga-teams.netlify.app/).
+The Live Site is here: [La Liga Teams Live](https://laliga-teams.netlify.app/).
 
 Features of the Site:
 
