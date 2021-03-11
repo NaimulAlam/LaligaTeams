@@ -21,7 +21,7 @@ const TeamDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setTeam(data.teams[0]))
-    }, [])
+    }, [strTeam])
 
     const headerStyle = {
         opacity: '0.7',
