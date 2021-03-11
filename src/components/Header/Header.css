@@ -17,7 +17,6 @@
   }
   @media (max-width: 576px) { 
       .header{
-          width: 70%;
           height: 200px;
           padding-top: 80px;
       }
