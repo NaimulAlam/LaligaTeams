@@ -18,7 +18,7 @@ const Teams = () => {
             <Container >
                 <Row>
                     {
-                        teams.map(team => <Team team={team}></Team>)
+                        teams.map((team, key) => <Team key={(teams[key].idTeam)} team={team}></Team>)
                     }
                 </Row>
             </Container>

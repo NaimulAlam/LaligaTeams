@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 import './Team.css';
 
 const Team = (props) => {
-    const { strTeam, strTeamBadge, strSport } = props.team;
+    const { strTeam, strTeamBadge, strSport, strCountry } = props.team;
 
     const history = useHistory();
 
@@ -22,6 +22,7 @@ const Team = (props) => {
                 <Card.Body>
                     <h5>{strTeam}</h5>
                     <h6>Sports Type: {strSport}</h6>
+                    <h6>Country: {strCountry}</h6>
                     <Button variant="primary"
                         onClick={() => handleClick(strTeam)}
                     >
